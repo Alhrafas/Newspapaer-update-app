@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dw00bx_4gt!j4#x$bka%(q@k(fe)@d=zkyuc7-k4!jqwz19&n5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -133,3 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home' # new
 LOGOUT_REDIRECT_URL = 'home' # new
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'd44342427f682d'
+EMAIL_HOST_PASSWORD = 'c1341105ac9cd3'
+EMAIL_PORT = '2525'
